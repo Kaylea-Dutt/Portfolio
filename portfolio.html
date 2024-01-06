@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio</title>
+            <link href="C:\Users\kayle\Projects\Portfolio\portfolio.css" rel="stylesheet" type="text/css"></link>
+            <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+        <div class="container">
+        <div class="background">
+        <div class="top">
+        <div class="greeting">
+        <h1>Hello,</h1>
+        <h1>My name is Kaylea.</h1>
+        <p>-Full Stack Developer-<p>
+        </div>
+        <div class="picture"><img src="C:\Users\kayle\Downloads\20230916_105221.jpg" alt="Picture of Kaylea"></div>
+        </div>
+
+        <div class="middle">
+           <a href="#skill-title">Skill Overview</a> 
+           <a href="C:\Users\kayle\Projects\Plain Resume\Plain Resume.html" target="blank">Resume</a>
+           <a href="https://github.com/Kaylea-Dutt" target="blank">Projects</a>
+           <a href="#" id="popup-link">Contact Me</a>
+            <div id="popup-window"><p>Get in touch</p>
+                <a href="https://www.linkedin.com/in/kaylea-dutt-5235a8290?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B6u6rnli6SQaAS%2Bgrbcjp%2Fg%3D%3D" target="blank">LinkedIn</a>
+                <a href="https://www.facebook.com/kahliray/" target="blank">Facebook</a>
+                <a href="https://github.com/Kaylea-Dutt" target="blank">Github</a>
+                <a href="mailto: kaydutt1138@gmail.com">Email: kaydutt1138@gmail.com</a>
+                <a href="tel: 480-330-5415">Phone: 480-330-5415</a>
+            <button id="close-button">Close</button>
+         </div>
+        </div>
+    </header>
+<main>
+        <div class="bottom">
+            <h2>About Me</h2>
+            <p>Hello! My name is Kaylea Dutt. I was born and raised in beautiful and sunny Arizona where I live with my husband, two kids, 2 cats and 4 dogs. I have a passion for creating engaging, functional, and accessible websites and code. My recent education is from Codecademy with focus on HTML, CSS, and Javascript. I am eager to start working on real world projects to bring useable technology and ideas to clients.</p>
+        </div>
+
+        <div class="skills">
+            
+            <div id="skill-title">
+            <h3>Skills Overview</h3>
+            </div>
+        
+
+            <div class="skillboxes">
+            <div class="front"><h4>Front-end</h4>
+            <p><span>&#10003</span> JavaScript</p>
+            <p><span>&#10003</span> CSS</p>
+            <p><span>&#10003</span> HTML</p>
+            <p><span>&#10003</span> Git Bash</p>
+            </div>
+            <div class="back"><h4>Back-end</h4>
+            <p><span>&#10003</span> Node</p>
+            </div>
+            <div class="tools"><h4>Tools</h4>
+            <p><span>&#10003</span> Visual Studio Code</p>
+            <p><span>&#10003</span> Github</p>
+            </div>
+            </div>
+            </div>
+            </main>
+        
+            <div class="footer">
+                <footer> &copy; Copyright 2023, KayleaNDutt. All Rights Reserved</footer>
+            </div>
+        </div>
+
+        <script>
+            // Get the elements by their ID
+            var popupLink = document.getElementById("popup-link");
+            var popupWindow = document.getElementById("popup-window");
+            var closeButton = document.getElementById("close-button");
+            // Show the pop-up window when the link is clicked
+            popupLink.addEventListener("click", function(event) {
+              event.preventDefault();
+              popupWindow.style.display = "block";
+            });
+            // Hide the pop-up window when the close button is clicked
+            closeButton.addEventListener("click", function() {
+              popupWindow.style.display = "none";
+            });
+            </script>
+
+
+
+    </body>
+</html>

@@ -1,0 +1,285 @@
+ html { 
+    scroll-behavior: smooth;
+    font-family: Poppins;
+}
+ 
+ .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .background {
+    background-image: url(https://images.unsplash.com/photo-1505909182942-e2f09aee3e89?q=80&w=1772&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+ .top {
+    display: inline-flex;
+    justify-content: flex-start;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+ }
+
+
+ .greeting {
+    margin-top: 40px;
+    margin-right: 80px;
+    margin-left: 300px;
+ }
+
+ .greeting h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+ }
+
+ .greeting p {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+ }
+ 
+ .picture img {
+    width: 250px;
+    height: 320px;
+    margin-top: 25px;
+    border: solid white 10px;
+}
+#popup-window {
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    background: rgb(21, 21, 83);
+    border: 5px solid white;
+    padding: 10px;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+    text-align: center;
+}
+
+#popup-window a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    border: solid white 2px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#popup-window p {
+    font-size: 25px;
+    color:white;
+}
+
+.middle {
+    display: inline-flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.middle a {
+    border: solid white 2px;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    color: black;
+    background-color: rgb(240, 240, 0);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    transform: scale(1.2);
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: solid white 5px;
+    background-color: rgb(227, 160, 171);
+    height: 400px;
+}
+
+.bottom h2 {
+    color: black;
+    margin-top: 60px;
+    font-size: 30px;
+    width: 80%;
+    height: 20%;
+    text-align: center;
+}
+
+.bottom p {
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    width: 80%;
+    height: 70%;
+    padding-bottom: 10%;
+    text-align: center;
+}
+
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 600px;
+    border-top: solid white 5px;
+    background-image: url("https://images.unsplash.com/photo-1652305459315-ea3418b9f0e3?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: stretch;
+}
+
+#skill-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+#skill-title h3 {
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+.skillboxes {
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.skillboxes h4 {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.skillboxes p {
+    font-size: 18px;
+    font-weight: bold;
+    text-indent: 20%;
+}
+
+.front,
+.back,
+.tools {
+width: 20%;
+height: 320px;
+background-color: rgba(255, 255, 255, 0.2);
+border: solid white 5px;
+}
+
+span {
+    color: white;
+}
+
+footer {
+    color: white;
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) {
+   .greeting {
+    width: 40%;
+    margin-left: 10%;
+    margin-right: 0;
+   }
+    .greeting h1 {
+    font-size: 50px;
+    margin: 0 0 0 0;
+   }
+   .greeting p {
+    font-size: 30px;
+    margin-top: 0px;
+   }
+    .bottom {
+    width: 100%;
+    height: 100%;
+   }
+   .bottom h2 {
+    font-size: 50px;
+   }
+   
+    .bottom p {
+        font-size: 35px;
+    }
+    .skillboxes {
+        display: flex;
+        justify-content: space-around;
+    }
+
+.front,
+.back,
+.tools {
+width: 31%;
+height: 320px;
+background-color: rgba(255, 255, 255, 0.2);
+border: solid white 5px;
+}
+
+.skillboxes p {
+    font-size: 22px;
+    width: 98%;
+}
+.skillboxes h4 {
+    font-size: 30px;
+    margin-bottom: 0;
+}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media screen and (min-width: 1400px) {
+    .greeting {
+        padding: 70px;
+        text-align: center;
+    }
+
+    .greeting h1 {
+        font-size: 60px;
+    }
+    .greeting p {
+        font-size: 30px;
+    }
+    .picture img {
+        height: 500px;
+        width: 400px;
+    }
+    .middle a {
+        font-size: 20px;
+    }
+    .bottom h2 {
+        font-size: 60px;
+    }
+    .bottom p {
+        font-size: 30px;
+    }
+    .skills {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 600px;
+        border-top: solid white 5px;
+        background-image: url("https://images.unsplash.com/photo-1652305459315-ea3418b9f0e3?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
